@@ -43,7 +43,7 @@ static void * trealloc(void * const ptr, size_t const size)
 
 #define malloc(size) tmalloc(size)
 #define calloc(nmemb, size) tcalloc(nmemb, size)
-#define realloc(nmemb, size) trealloc(ptr, size)
+#define realloc(ptr, size) trealloc(ptr, size)
 
 #endif
 #endif
